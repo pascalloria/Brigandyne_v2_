@@ -1,7 +1,7 @@
 # Brigandyne, Aventures de sang et d'acier
 
-Feuille de personnage pour [Brigandyne-v2](https://brigandyne.wordpress.com/), par [Mistryll] et [Taliesin]
-
+Feuille de personnage pour [Brigandyne-v2](https://brigandyne.wordpress.com/), par [pascalloria] et [Taliesin60] en s'insipirant de la feuille [Brigandyne] créer par [NathaTerrien]
+NathaTerrien
 ## Brigandyne !
 
 Un jeu de rôle de dark fantasy français

@@ -8349,10 +8349,179 @@ textarea.form-control-lg {
 }
 
 .bg{
-    background-image: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Brigandyne/brigandyne_bg.jpg');
+  background-image: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Brigandyne/brigandyne_bg.jpg');
+  background-size: cover
+}
+
+.contrail {
+  font-family: 'Contrail One';
+} 
+.patrickHand {  
+  font-family: "Patrick Hand";
+} 
+/* === fieldset BOUTONS === */
+div.repcontrol{
+  display: inline-block;
+  width: 100%;
+}
+.repcontrol_move{
+  height: 11px;
+  line-height: 11px;
+  margin-top: 4px;
+}
+.repcontrol_del {
+  height: 22px;
+  line-height: 12px;
+  margin-top: 4px;
+  width: 30px;
+}
+.repcontrol_add, .repcontrol_edit {
+  color: transparent;
+  box-shadow: none;
+  background: transparent;
+  border-color: transparent;
+  text-shadow:none;
+  width: 100px;
+}
+.repcontrol_add:focus, .repcontrol_edit:focus {
+  outline: none;
+}
+.repcontrol .repcontrol_edit:after {
+  content: 'y';
+  visibility: visible;
+  font-family: pictos;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+  padding: 2px 4px 2px 4px;
+  color: rgba(35,31,32,0.7);
+}
+.editmode ~ .repcontrol .repcontrol_edit:after {
+  content: '2';
+}
+.repcontrol .repcontrol_add:before {
+  content: '+';
+  visibility: visible;
+  font-family: pictos;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+  padding: 2px 4px 2px 4px;
+  color: rgba(35,31,32,0.7);
+}
+.repcontrol .repcontrol_edit:hover:after,
+.repcontrol .repcontrol_add:hover:before
+{
+  box-shadow: 1px 1px 4px 2px rgba(35,31,32,0.8);
+  border-color: #231F20;
+  color: #231F20;
+}
+.repcontrol_add:focus:before, .repcontrol_edit:focus:after {
+  color: #231F20;
 }
 
 
+
+/* ===== TEMPLATE ===== */
+.sheet-rolltemplate-tmpl div{
+  vertical-align: middle;
+  border: none;
+  box-sizing: border-box;
+  display: block;
+}
+.sheet-rolltemplate-tmpl div.sheet-tplmain{
+  background-color: transparent;
+  border-width: 1px 2px 1px 2px;
+  border-radius: 0px 12px 12px 12px;
+  border-style: solid;
+  border-color: #64553E;
+  width: auto;
+}
+.sheet-rolltemplate-tmpl div.sheet-pc{
+  background-color: #231F20;
+  color : white;
+  padding: 4px 0px 4px 4px;
+  border-radius: 0px 10px 0px 0px;
+  font-size: 15px;
+  font-family: 'Contrail One';
+  display: inline-block;
+  border-bottom: 1px dotted #64553E;
+  width: 100%;
+}
+.sheet-rolltemplate-tmpl div.sheet-jetnom{
+  background-color: #86704D;
+  color: #E0D3BA;
+  padding: 4px 0px 4px 4px;
+  border-radius: 0px 0px 10px 10px;
+  font-size: 15px;
+  font-family: 'Contrail One';
+  display: inline-block;
+  border-top: 1px dotted #64553E;
+  width: 100%;
+}
+.sheet-rolltemplate-tmpl div.sheet-jet{
+  background-color: #E0D3BA;
+  padding: 6px;
+  display: table-cell;
+  font-family: 'Shadows Into Light';
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+.sheet-rolltemplate-tmpl div.sheet-bordleft{
+  border-left: 1px dotted #64553E;
+}
+.sheet-rolltemplate-tmpl div.sheet-bordtop{
+  border-top: 1px dotted #64553E;
+}
+.sheet-rolltemplate-tmpl div.sheet-borderd{
+  border-right: 2px solid #64553E;
+}
+.sheet-rolltemplate-tmpl div.sheet-desc{
+  width: 100%;
+  text-align: left;
+  font-family: 'Arial';
+  font-size: inherit;
+  max-height: 180px;
+  overflow-y: auto;
+  background-color: #B5A790;
+  color: #231F20;
+}
+.sheet-rolltemplate-tmpl .inlinerollresult {
+  background-color: transparent;
+  color: #231F20;;
+  border: none;
+  padding: 0px 0px;
+  font-weight: bold;
+  cursor: help;
+  font-size: 18px;
+  font-family: 'Candal';
+}
+.sheet-rolltemplate-tmpl .sheet-success{
+  color: #3FB315;;
+}
+.sheet-rolltemplate-tmpl .sheet-failure{
+  color: #B31515;
+}
+.sheet-rolltemplate-tmpl .inlinerollresult.fullcrit{
+  border: none;
+  color: #3FB315;
+}
+.sheet-rolltemplate-tmpl .inlinerollresult.importantroll{
+  border: none;
+  color: #4A57ED;
+}
+.sheet-rolltemplate-tmpl .inlinerollresult.fullfail{
+  border: none;
+  color: #B31515;
+}
 
 @media (min-width: 576px) {
   .float-sm-start {
@@ -10880,5 +11049,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+
 
 /*# sourceMappingURL=bootstrap.css.map */
